@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="295dp"
+        android:layout_height="81dp"
+        android:src="@drawable/story"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="337dp"
+        android:layout_height="256dp"
+        android:background="#BF7F9F"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.525">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_first_name"
+            android:layout_width="297dp"
+            android:layout_height="40dp"
+            android:text="First Name"
+            android:textColor="#1B1919"
+            android:textColorHint="@color/black"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/tv_last_name"
+            android:layout_width="297dp"
+            android:layout_height="38dp"
+            android:autoSizeMaxTextSize="10dp"
+            android:text="Last Name"
+            android:textColor="#090808"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/action_edit"
+            android:layout_width="64dp"
+            android:layout_height="69dp"
+            app:srcCompat="@drawable/mode_edit_black_24dp" />
+
+        <ImageView
+            android:id="@+id/action_delete"
+            android:layout_width="64dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+
+            app:srcCompat="@drawable/delete_black_24dp" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
